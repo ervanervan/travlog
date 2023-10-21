@@ -34,16 +34,16 @@ export default function Navbar() {
               onClick={handleOpen}
             />
             <ul className="flex flex-col basis-full justify-center gap-8 list-none text-base font-semibold text-textGray">
-              <li className="hover:text-textPrimary duration-300">
+              <li className="hover:text-textBlack duration-300">
                 <a href="/">Home</a>
               </li>
-              <li className="hover:text-textPrimary duration-300">
+              <li className="hover:text-textBlack duration-300">
                 <a href="#discover">Discover</a>
               </li>
-              <li className="hover:text-textPrimary duration-300">
+              <li className="hover:text-textBlack duration-300">
                 <a href="#specialdeals">Special Deals</a>
               </li>
-              <li className="hover:text-textPrimary duration-300">
+              <li className="hover:text-textBlack duration-300">
                 <a href="#contactus">Contact</a>
               </li>
               <div className="flex flex-col gap-2">

@@ -6,10 +6,10 @@ export default function Button(props) {
       type={props.type}
       className={`py-4 px-8 
   ${props.className && props.className} 
-  ${props.isWhite && "bg-bgWhite text-textDark"} 
+  ${props.isWhite && "bg-bgWhite text-textGray"} 
   ${
     props.isPrimary && "bg-bgPrimary text-textWhite"
-  } text-base font-bold rounded-full`}
+  } text-sm font-bold rounded-full`}
     >
       {props.children}
     </button>
