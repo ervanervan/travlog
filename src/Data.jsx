@@ -57,3 +57,26 @@ export const DATA_DESTINATIONS = [
     icon: icon,
   },
 ];
+
+export const DATA_TRAVELPOINT = [
+  {
+    id: 1,
+    category: "Holiday Package",
+    total: "500+",
+  },
+  {
+    id: 2,
+    category: "Luxury Hotel",
+    total: "100",
+  },
+  {
+    id: 3,
+    category: "Premium Airlines",
+    total: "7",
+  },
+  {
+    id: 4,
+    category: "Happy Customer",
+    total: "2k+",
+  },
+];

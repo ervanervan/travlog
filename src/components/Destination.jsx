@@ -13,7 +13,7 @@ export default function Destination() {
       <div className="px-4 py-8">
         <div className="flex flex-col justify-center items-center gap-8">
           <div className="text-center">
-            <h3 className="font-bold text-textSecondary text-base uppercase mb-4">
+            <h3 className="font-bold text-textSecondary text-base uppercase tracking-[2px] mb-4">
               Top Destination
             </h3>
             <h2 className="text-textBlack font-bold text-3xl mb-8">
