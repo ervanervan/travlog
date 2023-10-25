@@ -10,6 +10,7 @@ import icon from "./assets/icon-star.svg";
 import iconfeature1 from "./assets/icon-location.svg";
 import iconfeature2 from "./assets/icon-calendar.svg";
 import iconfeature3 from "./assets/icon-discount.svg";
+import iconTestimonial from "./assets/icon-starTestimonial.svg";
 
 export const DATA_CATEGORIES = [
   {
@@ -107,5 +108,32 @@ export const DATA_FEATURES = [
     desc: "Lorem Ipsum is not simply random text",
     iconfeature: iconfeature3,
     color: "#F85E9F",
+  },
+];
+
+export const DATA_TESTIMONIALS = [
+  {
+    id: 1,
+    name: "Mark Smith",
+    work: "Travel Enthusiast",
+    iconTestimonial: iconTestimonial,
+    testimonial:
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.",
+  },
+  {
+    id: 2,
+    name: "Ervan",
+    work: "Travel Enthusiast",
+    iconTestimonial: iconTestimonial,
+    testimonial:
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.",
+  },
+  {
+    id: 3,
+    name: "Creative",
+    work: "Travel Enthusiast",
+    iconTestimonial: iconTestimonial,
+    testimonial:
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.",
   },
 ];
