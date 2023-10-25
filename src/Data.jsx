@@ -99,6 +99,7 @@ export const DATA_FEATURES = [
     desc: "It has roots in a piece of classical",
     iconfeature: iconfeature2,
     color: "#FACD49",
+    border: true,
   },
   {
     id: 3,

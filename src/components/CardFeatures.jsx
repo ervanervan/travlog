@@ -1,13 +1,20 @@
 import React from "react";
 
-export default function CardFeatures({ title, desc, iconfeature, color }) {
+export default function CardFeatures({
+  title,
+  desc,
+  iconfeature,
+  color,
+  border,
+}) {
   const containerStyle = { backgroundColor: color };
+  const cardClass = border ? "border rounded-3xl" : "";
 
   return (
-    <div className="p-8 border border-bgGray rounded-3xl">
+    <div className={`p-8 border-bgGray ${cardClass}`}>
       <div
         style={containerStyle}
-        className="w-24 h-24 rounded-3xl flex justify-center items-center mb-8"
+        className={`w-24 h-24 rounded-3xl flex justify-center items-center mb-8`}
       >
         <img src={iconfeature} alt="" width={48} height={48} />
       </div>
