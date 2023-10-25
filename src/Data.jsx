@@ -11,6 +11,7 @@ import iconfeature1 from "./assets/icon-location.svg";
 import iconfeature2 from "./assets/icon-calendar.svg";
 import iconfeature3 from "./assets/icon-discount.svg";
 import iconTestimonial from "./assets/icon-starTestimonial.svg";
+import userTestimonial from "./assets/user-testimonial.png";
 
 export const DATA_CATEGORIES = [
   {
@@ -119,6 +120,7 @@ export const DATA_TESTIMONIALS = [
     iconTestimonial: iconTestimonial,
     testimonial:
       "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.",
+    imgUrl: userTestimonial,
   },
   {
     id: 2,
@@ -127,6 +129,7 @@ export const DATA_TESTIMONIALS = [
     iconTestimonial: iconTestimonial,
     testimonial:
       "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.",
+    imgUrl: userTestimonial,
   },
   {
     id: 3,
@@ -135,5 +138,6 @@ export const DATA_TESTIMONIALS = [
     iconTestimonial: iconTestimonial,
     testimonial:
       "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.",
+    imgUrl: userTestimonial,
   },
 ];

@@ -2,7 +2,6 @@ import React from "react";
 import {
   ArrowLongLeftIcon,
   ArrowLongRightIcon,
-  BeakerIcon,
 } from "@heroicons/react/24/solid";
 import { DATA_DESTINATIONS } from "../Data";
 import CardDestinations from "./CardDestinations";
