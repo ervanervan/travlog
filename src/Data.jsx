@@ -7,6 +7,10 @@ import destination2 from "./assets/image-destination2.png";
 import destination3 from "./assets/image-destination3.png";
 import icon from "./assets/icon-star.svg";
 
+import iconfeature1 from "./assets/icon-location.svg";
+import iconfeature2 from "./assets/icon-calendar.svg";
+import iconfeature3 from "./assets/icon-discount.svg";
+
 export const DATA_CATEGORIES = [
   {
     id: 1,
@@ -78,5 +82,29 @@ export const DATA_TRAVELPOINT = [
     id: 4,
     category: "Happy Customer",
     total: "2k+",
+  },
+];
+
+export const DATA_FEATURES = [
+  {
+    id: 1,
+    title: "We offer best services",
+    desc: "Lorem Ipsum is not simply random text",
+    iconfeature: iconfeature1,
+    color: "#FF5722",
+  },
+  {
+    id: 2,
+    title: "Schedule your trip",
+    desc: "It has roots in a piece of classical",
+    iconfeature: iconfeature2,
+    color: "#FACD49",
+  },
+  {
+    id: 3,
+    title: "Get discounted coupons",
+    desc: "Lorem Ipsum is not simply random text",
+    iconfeature: iconfeature3,
+    color: "#F85E9F",
   },
 ];

@@ -20,6 +20,7 @@ export default {
         'bgWhite': '#FFFFFF',
         'bgGray': '#D9D9D9',
         'bgLight': '#EEEEEE',
+        'bgYellow': '#FACD49'
       }
     },
   },

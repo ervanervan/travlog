@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import Service from "../components/Service";
 import Destination from "../components/Destination";
 import TravelPoint from "../components/TravelPoint";
+import Features from "../components/Features";
 
 const HomePage = () => {
   return (
@@ -13,6 +14,7 @@ const HomePage = () => {
       <Service />
       <Destination />
       <TravelPoint />
+      <Features />
     </>
   );
 };
