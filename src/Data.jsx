@@ -142,7 +142,7 @@ export const DATA_FEATURES = [
 export const DATA_TESTIMONIALS = [
   {
     id: 1,
-    name: "Mark Smith",
+    name: "Mark",
     work: "Travel Enthusiast",
     iconTestimonial: iconTestimonial,
     testimonial:
@@ -156,15 +156,15 @@ export const DATA_TESTIMONIALS = [
     iconTestimonial: iconTestimonial,
     testimonial:
       "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.",
-    imgUrl: userTestimonial,
+    imgUrl: destination1,
   },
   {
     id: 3,
-    name: "Creative",
+    name: "Smith",
     work: "Travel Enthusiast",
     iconTestimonial: iconTestimonial,
     testimonial:
       "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.",
-    imgUrl: userTestimonial,
+    imgUrl: destination2,
   },
 ];

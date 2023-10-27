@@ -44,6 +44,7 @@
     width: 28% !important;
   }
 }
+
 @media (min-width: 1536px) {
   .carousel .slider {
     width: 24% !important;

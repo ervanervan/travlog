@@ -8,10 +8,16 @@ export default function CardTestimonial({
   imgUrl,
 }) {
   return (
-    <div className="pt-8 pb-16">
+    <div className="pt-8 pb-16 px-4">
       <div className="flex flex-col items-center justify-center gap-16">
-        <div className="w-32 h-32">
-          <img src={imgUrl} alt="" width={128} height={128} />
+        <div className="w-32 h-32 rounded-full">
+          <img
+            src={imgUrl}
+            alt=""
+            width={128}
+            height={128}
+            className="object-cover w-full h-full rounded-full"
+          />
         </div>
         <div className="text-center">
           <h2 className="mb-8 text-textOrange text-2xl font-bold">
