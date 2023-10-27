@@ -51,8 +51,8 @@ export default function Destination() {
               showArrows={false}
               showStatus={false}
               infiniteLoop={true}
-              // autoPlay={true}
-              showThumbs={false}
+              autoPlay={true}
+              showThumbs={true}
               selectedItem={activeIndex}
             >
               {DATA_DESTINATIONS.map((destination) => (

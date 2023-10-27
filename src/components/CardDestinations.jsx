@@ -9,7 +9,7 @@ export default function CardDestinations({
   rating,
 }) {
   return (
-    <div className="py-16">
+    <div id="destination" className="py-16">
       <div className="w-80 bg-bgWhite rounded-3xl shadow-lg">
         <div className="h-64 w-full rounded-t-3xl">
           <img
