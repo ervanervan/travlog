@@ -40,6 +40,7 @@ export default function Testimonial() {
           showThumbs={false}
           infiniteLoop={true}
           emulateTouch={true}
+          autoPlay={true}
           selectedItem={activeIndex}
         >
           {DATA_TESTIMONIALS.map((testimonial) => {
