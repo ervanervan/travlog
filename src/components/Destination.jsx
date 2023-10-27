@@ -51,8 +51,7 @@ export default function Destination() {
               showArrows={false}
               showStatus={false}
               infiniteLoop={true}
-              autoPlay={true}
-              interval={5000}
+              // autoPlay={true}
               showThumbs={false}
               selectedItem={activeIndex}
             >
