@@ -6,6 +6,7 @@ import Destination from "../components/Destination";
 import TravelPoint from "../components/TravelPoint";
 import Features from "../components/Features";
 import Testimonial from "../components/Testimonial";
+import Subscribe from "../components/Subscribe";
 
 const HomePage = () => {
   return (
@@ -17,6 +18,7 @@ const HomePage = () => {
       <TravelPoint />
       <Features />
       <Testimonial />
+      <Subscribe />
     </>
   );
 };
