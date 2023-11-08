@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "./Button";
 
 const Subscribe = () => {
   return (
@@ -20,7 +19,7 @@ const Subscribe = () => {
               placeholder="Your Email"
               className="px-8 py-6 rounded-2xl font-bold text-sm"
             />
-            <button className="px-8 py-6 rounded-2xl font-bold text-base bg-bgPrimary text-textWhite">
+            <button className="px-8 py-6 rounded-2xl font-bold text-base bg-bgPrimary text-textWhite outline-none border-none">
               Subscribe
             </button>
           </div>
