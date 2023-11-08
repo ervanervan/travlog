@@ -12,17 +12,39 @@ export default function Navbar() {
   return (
     <header className="bg-bgWhite">
       <nav className="container mx-auto">
-        <div className="px-4 md:px-20 py-8 flex justify-between items-center">
+        <div className="px-4 xl:px-20 py-8 flex justify-between items-center">
           <div className="flex gap-4 items-center">
             <img src={logo} alt="Logo Travlog" className="w-10 h-10" />
             <h1 className="font-black text-2xl text-textBlack">Travlog</h1>
           </div>
-          <div>
+          <div className="hidden lg:block">
+            <ul className="flex justify-center gap-8 xl:gap-16 list-none text-sm font-semibold text-textGray">
+              <li className="hover:text-textBlack duration-300">
+                <a href="/">Home</a>
+              </li>
+              <li className="hover:text-textBlack duration-300">
+                <a href="#discover">Discover</a>
+              </li>
+              <li className="hover:text-textBlack duration-300">
+                <a href="#specialdeals">Special Deals</a>
+              </li>
+              <li className="hover:text-textBlack duration-300">
+                <a href="#contactus">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div className="hidden lg:block">
+            <div className="flex gap-2">
+              <Button isWhite>Log In</Button>
+              <Button isPrimary>Sign Up</Button>
+            </div>
+          </div>
+          <div className="lg:hidden">
             <img src={menu} alt="menu" onClick={handleOpen} />
           </div>
         </div>
         <div
-          className={`fixed top-0 right-0 w-full h-screen z-30 bg-black/5 backdrop-blur-md md:hidden ${
+          className={`fixed top-0 right-0 w-full h-screen z-30 bg-black/5 backdrop-blur-md lg:hidden ${
             isOpen ? "translate-x-0" : "translate-x-full"
           } transition-all`}
         >

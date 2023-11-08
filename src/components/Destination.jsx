@@ -24,16 +24,18 @@ export default function Destination() {
   };
   return (
     <section className="container mx-auto">
-      <div className="px-4 md:px-20 py-8">
-        <div className="text-center">
-          <h3 className="font-bold text-textSecondary text-base uppercase tracking-[2px] mb-4">
-            Top Destination
-          </h3>
-          <h2 className="text-textBlack font-bold text-3xl mb-8">
-            Explore top destinations
-          </h2>
-          <div>
-            <div className="flex justify-between items-center">
+      <div className="px-4 xl:px-20 py-8">
+        <div className="text-center xl:text-start">
+          <div className="xl:flex xl:items-center xl:justify-between">
+            <div>
+              <h3 className="font-bold text-textSecondary text-base md:text-xl uppercase tracking-[2px] mb-4">
+                Top Destination
+              </h3>
+              <h2 className="text-textBlack font-bold text-3xl md:text-4xl mb-8">
+                Explore top destinations
+              </h2>
+            </div>
+            <div className="flex justify-between md:justify-center md:gap-8 items-center">
               <button
                 onClick={handlePrev}
                 className="p-6 rounded-full bg-bgWhite border border-bgGray"
@@ -47,6 +49,8 @@ export default function Destination() {
                 <ArrowLongRightIcon className="h-6 w-6 text-textWhite" />
               </button>
             </div>
+          </div>
+          <div>
             <Carousel
               swipeable={false}
               showArrows={false}
