@@ -12,7 +12,7 @@ export default function Navbar() {
   return (
     <header className="bg-bgWhite">
       <nav className="container mx-auto">
-        <div className="px-4 py-8 flex justify-between items-center">
+        <div className="px-4 md:px-20 py-8 flex justify-between items-center">
           <div className="flex gap-4 items-center">
             <img src={logo} alt="Logo Travlog" className="w-10 h-10" />
             <h1 className="font-black text-2xl text-textBlack">Travlog</h1>

@@ -6,7 +6,7 @@ import imgTravelPoint from "../assets/image-travelpoint.png";
 export default function TravelPoint() {
   return (
     <section className="container mx-auto">
-      <div className="px-4 py-8">
+      <div className="px-4 md:px-20 py-8">
         <div className="flex flex-col gap-16 items-center justify-center">
           <div>
             <img src={imgTravelPoint} alt="" className="w-full" />

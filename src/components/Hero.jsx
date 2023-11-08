@@ -12,7 +12,7 @@ import companies5 from "../assets/logo-orbitz.svg";
 export default function Hero() {
   return (
     <section className="container mx-auto">
-      <div className="px-4 pt-8 gap-8 flex flex-col justify-center items-center">
+      <div className="px-4 md:px-20 pt-8 gap-8 flex flex-col justify-center items-center">
         <div>
           <img src={heroImg} alt="" className="w-[25rem]" />
         </div>
