@@ -48,6 +48,7 @@ export default function Destination() {
               </button>
             </div>
             <Carousel
+              swipeable={false}
               showArrows={false}
               showStatus={false}
               infiniteLoop={true}

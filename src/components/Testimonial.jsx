@@ -35,11 +35,11 @@ export default function Testimonial() {
           </h2>
         </div>
         <Carousel
+          swipeable={false}
           showArrows={false}
           showStatus={false}
           showThumbs={false}
           infiniteLoop={true}
-          emulateTouch={true}
           autoPlay={true}
           selectedItem={activeIndex}
         >
