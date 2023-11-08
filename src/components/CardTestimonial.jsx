@@ -8,7 +8,7 @@ export default function CardTestimonial({
   imgUrl,
 }) {
   return (
-    <div className="pt-8 pb-16 px-4">
+    <div className="pt-8 pb-16">
       <div className="flex flex-col items-center justify-center gap-16">
         <div className="w-32 h-32 rounded-full">
           <img
@@ -62,7 +62,9 @@ export default function CardTestimonial({
             />
           </div>
         </div>
-        <p className="text-textBlack75 text-lg text-center">{testimonial}</p>
+        <p className="text-textBlack75 text-lg text-center w-11/12">
+          {testimonial}
+        </p>
       </div>
     </div>
   );

@@ -25,7 +25,7 @@ export default function Testimonial() {
 
   return (
     <section className="container mx-auto">
-      <div className="px-4 py-8">
+      <div className=" py-8">
         <div className="text-center">
           <h3 className="font-bold text-textSecondary text-base uppercase tracking-[2px] mb-4">
             Testimonials
@@ -35,12 +35,12 @@ export default function Testimonial() {
           </h2>
         </div>
         <Carousel
-          swipeable={false}
+          // swipeable={false}
           showArrows={false}
           showStatus={false}
           showThumbs={false}
           infiniteLoop={true}
-          autoPlay={true}
+          autoPlay={false}
           selectedItem={activeIndex}
         >
           {DATA_TESTIMONIALS.map((testimonial) => {
