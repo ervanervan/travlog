@@ -11,10 +11,12 @@ export default function CardFeatures({
   const cardClass = border ? "border rounded-3xl" : "";
 
   return (
-    <div className={`p-8 border-bgGray ${cardClass}`}>
+    <div
+      className={`p-8 border-bgGray ${cardClass} md:flex md:gap-8 md:items-center flex-1`}
+    >
       <div
         style={containerStyle}
-        className={`w-24 h-24 rounded-3xl flex justify-center items-center mb-8`}
+        className={`w-24 h-24 rounded-3xl flex justify-center items-center mb-8 md:mb-0`}
       >
         <img src={iconfeature} alt="" width={48} height={48} />
       </div>
