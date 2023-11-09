@@ -13,11 +13,11 @@ export default function Navbar() {
     <header className="bg-bgWhite">
       <nav className="container mx-auto">
         <div className="px-4 xl:px-20 py-8 flex justify-between items-center">
-          <div className="flex gap-4 items-center md:order-2">
+          <div className="flex gap-4 items-center md:order-2 lg:order-1">
             <img src={logo} alt="Logo Travlog" className="w-10 h-10" />
             <h1 className="font-black text-2xl text-textBlack">Travlog</h1>
           </div>
-          <div className="hidden lg:block">
+          <div className="hidden lg:block lg:order-2">
             <ul className="flex justify-center gap-8 xl:gap-16 list-none text-sm font-semibold text-textGray">
               <li className="hover:text-textBlack duration-300">
                 <a href="/">Home</a>
