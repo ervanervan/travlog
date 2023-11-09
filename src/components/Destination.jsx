@@ -24,7 +24,7 @@ export default function Destination() {
   };
   return (
     <section className="container mx-auto">
-      <div className="px-4 xl:px-20 py-8">
+      <div className="px-4 xl:px-20 py-8 md:py-16">
         <div className="text-center xl:text-start">
           <div className="xl:flex xl:items-center xl:justify-between">
             <div>

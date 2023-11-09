@@ -13,7 +13,7 @@ export default function Navbar() {
     <header className="bg-bgWhite">
       <nav className="container mx-auto">
         <div className="px-4 xl:px-20 py-8 flex justify-between items-center">
-          <div className="flex gap-4 items-center">
+          <div className="flex gap-4 items-center md:order-2">
             <img src={logo} alt="Logo Travlog" className="w-10 h-10" />
             <h1 className="font-black text-2xl text-textBlack">Travlog</h1>
           </div>
@@ -33,13 +33,13 @@ export default function Navbar() {
               </li>
             </ul>
           </div>
-          <div className="hidden lg:block">
+          <div className="hidden md:block md:order-3">
             <div className="flex gap-2">
               <Button isWhite>Log In</Button>
               <Button isPrimary>Sign Up</Button>
             </div>
           </div>
-          <div className="lg:hidden">
+          <div className="lg:hidden md:order-1">
             <img src={menu} alt="menu" onClick={handleOpen} />
           </div>
         </div>
@@ -68,7 +68,7 @@ export default function Navbar() {
               <li className="hover:text-textBlack duration-300">
                 <a href="#contactus">Contact</a>
               </li>
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-2 md:hidden">
                 <Button isWhite>Log In</Button>
                 <Button isPrimary>Sign Up</Button>
               </div>

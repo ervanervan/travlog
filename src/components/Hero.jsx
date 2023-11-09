@@ -12,28 +12,28 @@ import companies5 from "../assets/logo-orbitz.svg";
 export default function Hero() {
   return (
     <section className="container mx-auto">
-      <div className="px-4 xl:px-20 pt-8 gap-8 flex flex-col lg:flex-row justify-center items-center">
+      <div className="px-4 md:px-16 xl:px-20 pt-8 gap-8 md:gap-0 flex flex-col lg:flex-row justify-center items-center">
         <div className="lg:flex-1 lg:order-2">
           <img
             src={heroImg}
             width={760}
             height={700}
             alt=""
-            className="w-[25rem] lg:w-full"
+            className="w-[25rem] md:w-full"
           />
         </div>
         <div className="text-center lg:text-start lg:w-[36%] lg:order-1">
-          <button className="bg-bgWhite py-4 px-8 text-sm rounded-full shadow-2xl flex gap-4 items-center font-bold text-textSecondary mb-4 lg:mb-10 mx-auto lg:mx-0">
+          <button className="bg-bgWhite py-4 px-8 text-sm rounded-full shadow-2xl flex gap-4 items-center font-bold text-textSecondary mb-4 md:mb-10 mx-auto lg:mx-0">
             Explore the world!
             <span>
               <img src={work} alt="icon work" />
             </span>
           </button>
-          <h1 className="text-textBlack font-bold text-4xl lg:text-6xl mb-6 lg:mb-10">
+          <h1 className="text-textBlack font-bold text-4xl md:text-5xl lg:text-6xl mb-6 lg:mb-10">
             Travel <span className="text-textSecondary">top destination </span>
             of the world
           </h1>
-          <p className="text-textGray text-base lg:text-lg">
+          <p className="text-textGray text-base md:text-lg md:w-[65%] lg:w-full mx-auto">
             We always make our customer happy by providing as many choices as
             possible
           </p>
@@ -50,36 +50,36 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <div className="flex px-4 xl:px-20 py-8 xl:pt-8 gap-6 flex-wrap items-center justify-center xl:justify-between">
+      <div className="flex px-4 md:px-16 xl:px-20 py-8 xl:pt-8 gap-6 flex-wrap items-center justify-center xl:justify-between">
         <img
           src={companies1}
           alt=""
           height={20}
-          className="object-contain xl:h-8"
+          className="object-contain md:h-8"
         />
         <img
           src={companies2}
           alt=""
           height={20}
-          className="object-contain xl:h-8"
+          className="object-contain md:h-8"
         />
         <img
           src={companies3}
           alt=""
           height={20}
-          className="object-contain xl:h-8"
+          className="object-contain md:h-8"
         />
         <img
           src={companies4}
           alt=""
           height={20}
-          className="object-contain xl:h-8"
+          className="object-contain md:h-8"
         />
         <img
           src={companies5}
           alt=""
           height={20}
-          className="object-contain xl:h-8"
+          className="object-contain md:h-8"
         />
       </div>
     </section>

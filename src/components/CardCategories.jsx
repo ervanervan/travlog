@@ -3,8 +3,8 @@ import React from "react";
 export default function ({ id, title, desc, imgUrl }) {
   const cardClasses =
     id === 2
-      ? "w-80 p-8 md:p-16 flex flex-col justify-center text-center items-center border border-bgLight rounded-3xl shadow-xl"
-      : "w-80 p-8 md:p-16 flex flex-col justify-center text-center items-center border border-bgLight rounded-3xl";
+      ? "w-80 p-8 lg:p-16 flex flex-col justify-center text-center items-center border border-bgLight rounded-3xl shadow-xl"
+      : "w-80 p-8 lg:p-16 flex flex-col justify-center text-center items-center border border-bgLight rounded-3xl";
 
   return (
     <div className={cardClasses}>
