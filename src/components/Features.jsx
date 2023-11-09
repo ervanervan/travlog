@@ -7,13 +7,13 @@ export default function Features() {
   return (
     <section className="container mx-auto">
       <div className="px-4 xl:px-20 py-8 md:py-16">
-        <div className="px-8">
-          <div className="flex flex-col gap-16 items center">
-            <div>
+        <div className="px-8 lg:px-0">
+          <div className="flex flex-col lg:flex-row items-start gap-16 lg:gap-6 xl:gap-14 items center">
+            <div className="lg:order-2 lg:-mr-32">
               <img src={imgFeatures} alt="" />
             </div>
-            <div className="flex flex-col gap-8 md:gap-16 items-center">
-              <div className="text-center">
+            <div className="flex flex-col gap-8 md:gap-16 items-center lg:order-1">
+              <div className="text-center lg:text-start">
                 <h3 className="font-bold text-textSecondary text-base md:text-xl uppercase tracking-[2px] mb-4">
                   Key features
                 </h3>

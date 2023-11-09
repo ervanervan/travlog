@@ -22,7 +22,7 @@ export default function CardFeatures({
       </div>
       <div>
         <h2 className="text-textBlack font-bold text-2xl mb-2">{title}</h2>
-        <p className="text-textGray text-base">{desc}</p>
+        <p className="text-textGray text-base lg:text-lg">{desc}</p>
       </div>
     </div>
   );
