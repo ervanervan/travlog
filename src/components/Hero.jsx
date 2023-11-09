@@ -37,8 +37,8 @@ export default function Hero() {
             We always make our customer happy by providing as many choices as
             possible
           </p>
-          <div className="flex flex-col items-center lg:flex-row gap-6 lg:gap-4 py-8 xl:py-10">
-            <div className="shadow-2xl rounded-full">
+          <div className="flex flex-col lg:items-center lg:flex-row gap-6 lg:gap-4 py-8 xl:py-10">
+            <div className="shadow-2xl flex flex-col rounded-full">
               <Button isPrimary>Get started</Button>
             </div>
             <button className="bg-bgWhite py-4 px-8 text-sm rounded-full flex gap-2 justify-center items-center font-bold text-textDark">

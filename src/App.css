@@ -29,13 +29,13 @@
 
 @media (min-width: 768px) {
   .carousel .slider {
-    width: 57% !important;
+    width: 48% !important;
   }
 }
 
 @media (min-width: 1024px) {
   .carousel .slider {
-    width: 40% !important;
+    width: 36% !important;
   }
 }
 
