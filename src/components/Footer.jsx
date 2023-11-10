@@ -25,8 +25,8 @@ const Footer = () => {
               <img src={iconIG} alt="instagram" />
             </div>
           </div>
-          <div className="w-full lg:w-1/2 flex items-start justify-between">
-            <div className="flex gap-8 flex-col">
+          <div className="w-full gap-6 flex-col md:flex-row lg:w-1/2 flex items-start justify-between">
+            <div className="flex gap-4 md:gap-8 flex-col">
               <h3 className="font-bold text-textBlack text-xl">Company</h3>
               <Link className="text-textGray text-lg font-medium hover:underline">
                 About
@@ -38,7 +38,7 @@ const Footer = () => {
                 Mobile
               </Link>
             </div>
-            <div className="flex gap-8 flex-col">
+            <div className="flex gap-4 md:gap-8 flex-col">
               <h3 className="font-bold text-textBlack text-xl">Contact</h3>
               <Link className="text-textGray text-lg font-medium hover:underline">
                 Why Travlog?
@@ -53,7 +53,7 @@ const Footer = () => {
                 Blog
               </Link>
             </div>
-            <div className="flex gap-8 flex-col">
+            <div className="flex gap-4 md:gap-8 flex-col">
               <h3 className="font-bold text-textBlack text-xl">Meet Us</h3>
               <Link className="text-textGray text-lg font-medium hover:underline">
                 +00 92 1234 56789
