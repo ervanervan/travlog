@@ -4,7 +4,7 @@ import graphicElement from "../assets/graphic-element.svg";
 const Subscribe = () => {
   return (
     <section className="container mx-auto">
-      <div className="relative px-4 xl:px-20 pt-16">
+      <div className="relative px-4 xl:px-20 md:py-16">
         <img
           src={graphicElement}
           alt=""

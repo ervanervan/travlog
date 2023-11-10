@@ -5,7 +5,7 @@ import CardFeatures from "./CardFeatures";
 
 export default function Features() {
   return (
-    <section className="container mx-auto">
+    <section className="container mx-auto overflow-hidden">
       <div className="px-4 xl:px-20 py-8 md:py-16">
         <div className="px-8 lg:px-0">
           <div className="flex flex-col lg:flex-row items-start gap-16 lg:gap-6 xl:gap-14 items center">
