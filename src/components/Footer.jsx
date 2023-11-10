@@ -9,13 +9,13 @@ const Footer = () => {
   return (
     <footer className="container mx-auto">
       <div className="px-4 xl:px-20 md:py-16">
-        <div className="flex gap-16 items-start">
+        <div className="flex gap-16 items-start flex-col lg:flex-row">
           <div className="lg:w-1/2">
             <div className="flex gap-4 items-center mb-8">
               <img src={logo} alt="Logo Travlog" width={40} height={40} />
               <h1 className="font-black text-2xl text-textBlack">Travlog</h1>
             </div>
-            <p className="text-textGray text-xl font-medium mb-16">
+            <p className="text-textGray text-xl font-medium mb-8 lg:mb-16">
               Contrary to popular belief, Lorem Ipsum is not simply random text.
               It has roots in a piece of classical Latin literature from 45 BC.
             </p>
@@ -25,7 +25,7 @@ const Footer = () => {
               <img src={iconIG} alt="instagram" />
             </div>
           </div>
-          <div className="lg:w-1/2 flex items-start justify-between">
+          <div className="w-full lg:w-1/2 flex items-start justify-between">
             <div className="flex gap-8 flex-col">
               <h3 className="font-bold text-textBlack text-xl">Company</h3>
               <Link className="text-textGray text-lg font-medium hover:underline">
