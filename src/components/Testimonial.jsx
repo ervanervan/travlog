@@ -8,19 +8,6 @@ import CustomLeftArrow from "./CustomLeftArrow";
 import CustomRightArrow from "./CustomRightArrow";
 
 export default function Testimonial() {
-  const [isLeftButtonActive, setIsLeftButtonActive] = useState(false);
-  const [isRightButtonActive, setIsRightButtonActive] = useState(false);
-
-  const handleLeftButtonClick = () => {
-    setIsLeftButtonActive(true);
-    setIsRightButtonActive(false);
-  };
-
-  const handleRightButtonClick = () => {
-    setIsRightButtonActive(true);
-    setIsLeftButtonActive(false);
-  };
-
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -60,18 +47,8 @@ export default function Testimonial() {
           autoPlaySpeed={1500}
           showDots={true}
           customDot={<CustomDot />}
-          customLeftArrow={
-            <CustomLeftArrow
-              onClick={handleLeftButtonClick}
-              isActive={isLeftButtonActive}
-            />
-          }
-          customRightArrow={
-            <CustomRightArrow
-              onClick={handleRightButtonClick}
-              isActive={isRightButtonActive}
-            />
-          }
+          customLeftArrow={<CustomLeftArrow />}
+          customRightArrow={<CustomRightArrow />}
         >
           {DATA_TESTIMONIALS.map((testimonial) => {
             return <CardTestimonial key={testimonial.id} {...testimonial} />;
