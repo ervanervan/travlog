@@ -1,32 +1,28 @@
 import React, { useState } from "react";
 import { DATA_TESTIMONIALS } from "../Data";
 import CardTestimonial from "./CardTestimonial";
-import {
-  ArrowLongLeftIcon,
-  ArrowLongRightIcon,
-} from "@heroicons/react/24/solid";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import CustomDot from "./CustomDot";
+import CustomLeftArrow from "./CustomLeftArrow";
+import CustomRightArrow from "./CustomRightArrow";
 
 export default function Testimonial() {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [isLeftButtonActive, setIsLeftButtonActive] = useState(false);
+  const [isRightButtonActive, setIsRightButtonActive] = useState(false);
 
-  const handlePrev = () => {
-    setActiveIndex((prevIndex) =>
-      prevIndex === 0 ? DATA_TESTIMONIALS.length - 1 : prevIndex - 1
-    );
+  const handleLeftButtonClick = () => {
+    setIsLeftButtonActive(true);
+    setIsRightButtonActive(false);
   };
 
-  const handleNext = () => {
-    setActiveIndex((prevIndex) =>
-      prevIndex === DATA_TESTIMONIALS.length - 1 ? 0 : prevIndex + 1
-    );
+  const handleRightButtonClick = () => {
+    setIsRightButtonActive(true);
+    setIsLeftButtonActive(false);
   };
 
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 1,
     },
@@ -59,30 +55,28 @@ export default function Testimonial() {
           responsive={responsive}
           swipeable={false}
           draggable={false}
-          showDots={true}
           infinite={true}
           autoPlay={true}
           autoPlaySpeed={1500}
+          showDots={true}
           customDot={<CustomDot />}
+          customLeftArrow={
+            <CustomLeftArrow
+              onClick={handleLeftButtonClick}
+              isActive={isLeftButtonActive}
+            />
+          }
+          customRightArrow={
+            <CustomRightArrow
+              onClick={handleRightButtonClick}
+              isActive={isRightButtonActive}
+            />
+          }
         >
           {DATA_TESTIMONIALS.map((testimonial) => {
             return <CardTestimonial key={testimonial.id} {...testimonial} />;
           })}
         </Carousel>
-        <div className="flex justify-between items-center">
-          <button
-            onClick={handlePrev}
-            className="p-6 rounded-full bg-bgWhite border border-bgGray"
-          >
-            <ArrowLongLeftIcon className="h-6 w-6 text-slate-900" />
-          </button>
-          <button
-            onClick={handleNext}
-            className="p-6 rounded-full bg-bgPrimary"
-          >
-            <ArrowLongRightIcon className="h-6 w-6 text-textWhite" />
-          </button>
-        </div>
       </div>
     </section>
   );
