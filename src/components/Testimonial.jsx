@@ -7,6 +7,7 @@ import {
 } from "@heroicons/react/24/solid";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import CustomDot from "./CustomDot";
 
 export default function Testimonial() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -54,7 +55,16 @@ export default function Testimonial() {
             Trust our clients
           </h2>
         </div>
-        <Carousel responsive={responsive}>
+        <Carousel
+          responsive={responsive}
+          swipeable={false}
+          draggable={false}
+          showDots={true}
+          infinite={true}
+          autoPlay={true}
+          autoPlaySpeed={1500}
+          customDot={<CustomDot />}
+        >
           {DATA_TESTIMONIALS.map((testimonial) => {
             return <CardTestimonial key={testimonial.id} {...testimonial} />;
           })}

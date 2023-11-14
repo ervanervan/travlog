@@ -1,18 +1,20 @@
-.carousel .control-dots .dot {
+.react-multi-carousel-dot-list {
+  align-items: center;
+}
+
+.custom-dot {
   width: 20px !important;
   height: 20px !important;
   box-shadow: none !important;
+  background-color: #d9d9d9 !important;
+  border-radius: 50%;
+  margin-right: 5px;
 }
 
-.carousel .control-dots .dot.selected {
+.custom-dot-active {
   width: 24px !important;
   height: 24px !important;
-}
-
-.carousel .control-dots .dot {
-  background-color: #d9d9d9 !important;
-}
-
-.carousel .control-dots .dot.selected {
   background-color: #f85e9f !important;
+  border-radius: 50%;
+  margin-right: 5px;
 }
