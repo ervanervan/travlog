@@ -16,37 +16,3 @@
 .carousel .control-dots .dot.selected {
   background-color: #f85e9f !important;
 }
-
-.carousel .slider {
-  width: 110% !important;
-}
-
-@media (min-width: 640px) {
-  .carousel .slider {
-    width: 57% !important;
-  }
-}
-
-@media (min-width: 768px) {
-  .carousel .slider {
-    width: 48% !important;
-  }
-}
-
-@media (min-width: 1024px) {
-  .carousel .slider {
-    width: 36% !important;
-  }
-}
-
-@media (min-width: 1280px) {
-  .carousel .slider {
-    width: 32% !important;
-  }
-}
-
-@media (min-width: 1536px) {
-  .carousel .slider {
-    width: 26% !important;
-  }
-}

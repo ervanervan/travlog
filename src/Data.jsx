@@ -62,6 +62,15 @@ export const DATA_DESTINATIONS = [
     rating: "5.0",
     icon: icon,
   },
+  {
+    id: 4,
+    imgUrl: destination1,
+    title: "Mountain View, Above the cloud",
+    location: "United Arab Emeries ",
+    price: "$150.99",
+    rating: "5.0",
+    icon: icon,
+  },
 ];
 
 export const DATA_TRAVELPOINT = [
@@ -139,5 +148,14 @@ export const DATA_TESTIMONIALS = [
     testimonial:
       "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.",
     imgUrl: destination2,
+  },
+  {
+    id: 4,
+    name: "Mark",
+    work: "Travel Enthusiast",
+    iconTestimonial: iconTestimonial,
+    testimonial:
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.",
+    imgUrl: userTestimonial,
   },
 ];

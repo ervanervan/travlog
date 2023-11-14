@@ -5,8 +5,8 @@ import {
   ArrowLongLeftIcon,
   ArrowLongRightIcon,
 } from "@heroicons/react/24/solid";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 export default function Testimonial() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -23,6 +23,26 @@ export default function Testimonial() {
     );
   };
 
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 1,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 1,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 1,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
+
   return (
     <section className="container mx-auto">
       <div className="px-4 md:px-20 py-8">
@@ -34,15 +54,7 @@ export default function Testimonial() {
             Trust our clients
           </h2>
         </div>
-        <Carousel
-          swipeable={false}
-          showArrows={false}
-          showStatus={false}
-          showThumbs={false}
-          infiniteLoop={true}
-          autoPlay={true}
-          selectedItem={activeIndex}
-        >
+        <Carousel responsive={responsive}>
           {DATA_TESTIMONIALS.map((testimonial) => {
             return <CardTestimonial key={testimonial.id} {...testimonial} />;
           })}
