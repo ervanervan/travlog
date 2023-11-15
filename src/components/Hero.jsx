@@ -17,7 +17,7 @@ export default function Hero() {
         src={objectsArrowUp}
         alt=""
         draggable={false}
-        className="absolute md:bottom-48 lg:bottom-6 xl:bottom-20 xl:-left-2"
+        className="absolute md:bottom-48 lg:bottom-6 xl:bottom-20 xl:-left-2 hidden md:block"
       />
       <div className="px-4 md:px-16 lg:px-4 xl:px-20 pt-8 md:pb-16 lg:pb-0 gap-8 md:gap-0 flex flex-col lg:flex-row justify-center items-center">
         <div className="lg:flex-1 lg:order-2">
