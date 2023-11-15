@@ -62,7 +62,9 @@ export default function CardTestimonial({
             />
           </div>
         </div>
-        <p className="text-textBlack75 text-lg text-center">{testimonial}</p>
+        <p className="text-textBlack75 text-lg text-center w-full md:w-4/5 xl:w-3/5">
+          {testimonial}
+        </p>
       </div>
     </div>
   );
