@@ -8,11 +8,18 @@ import companies2 from "../assets/logo-expedia.svg";
 import companies3 from "../assets/logo-bookingcom.svg";
 import companies4 from "../assets/logo-airbnb.svg";
 import companies5 from "../assets/logo-orbitz.svg";
+import objectsArrowUp from "../assets/objects-arrow-up.svg";
 
 export default function Hero() {
   return (
-    <section className="container mx-auto">
-      <div className="px-4 md:px-16 lg:px-4 xl:px-20 pt-8 gap-8 md:gap-0 flex flex-col lg:flex-row justify-center items-center">
+    <section className="container mx-auto relative">
+      <img
+        src={objectsArrowUp}
+        alt=""
+        draggable={false}
+        className="absolute md:bottom-48 lg:bottom-6 xl:bottom-20 xl:-left-2"
+      />
+      <div className="px-4 md:px-16 lg:px-4 xl:px-20 pt-8 md:pb-16 lg:pb-0 gap-8 md:gap-0 flex flex-col lg:flex-row justify-center items-center">
         <div className="lg:flex-1 lg:order-2">
           <img
             src={heroImg}
@@ -37,7 +44,7 @@ export default function Hero() {
             We always make our customer happy by providing as many choices as
             possible
           </p>
-          <div className="flex flex-col lg:items-center lg:flex-row gap-6 lg:gap-4 py-8 xl:py-10">
+          <div className="flex flex-col md:items-center md:flex-row md:justify-center lg:justify-start gap-6 lg:gap-4 py-8 xl:py-10">
             <div className="shadow-2xl flex flex-col rounded-full">
               <Button isPrimary>Get started</Button>
             </div>
