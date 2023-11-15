@@ -13,6 +13,7 @@ export default function CardTestimonial({
         <div className="w-32 h-32 rounded-full">
           <img
             src={imgUrl}
+            draggable={false}
             alt=""
             width={128}
             height={128}
@@ -30,6 +31,7 @@ export default function CardTestimonial({
               alt=""
               width={32}
               height={32}
+              draggable={false}
               className="w-8 h-8"
             />
             <img
@@ -37,6 +39,7 @@ export default function CardTestimonial({
               alt=""
               width={32}
               height={32}
+              draggable={false}
               className="w-8 h-8"
             />
             <img
@@ -44,6 +47,7 @@ export default function CardTestimonial({
               alt=""
               width={32}
               height={32}
+              draggable={false}
               className="w-8 h-8"
             />
             <img
@@ -51,6 +55,7 @@ export default function CardTestimonial({
               alt=""
               width={32}
               height={32}
+              draggable={false}
               className="w-8 h-8"
             />
             <img
@@ -58,6 +63,7 @@ export default function CardTestimonial({
               alt=""
               width={32}
               height={32}
+              draggable={false}
               className="w-8 h-8"
             />
           </div>
