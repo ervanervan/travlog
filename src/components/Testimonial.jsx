@@ -6,6 +6,7 @@ import "react-multi-carousel/lib/styles.css";
 import CustomDot from "./CustomDot";
 import CustomLeftArrow from "./CustomLeftArrow";
 import CustomRightArrow from "./CustomRightArrow";
+import bgLayer from "../assets/bg-layer.svg";
 
 export default function Testimonial() {
   const responsive = {
@@ -28,8 +29,14 @@ export default function Testimonial() {
   };
 
   return (
-    <section className="container mx-auto">
-      <div className="px-4 lg:px-20 py-8">
+    <section className="relative">
+      <img
+        src={bgLayer}
+        alt=""
+        draggable={false}
+        className="absolute w-full left-0 lg:-top-28 xl:-top-64 2xl:-top-[30rem] object-fill hidden md:block"
+      />
+      <div className="container mx-auto px-4 lg:px-20 py-8">
         <div className="text-center">
           <h3 className="font-bold text-textSecondary text-base uppercase tracking-[2px] mb-4">
             Testimonials
