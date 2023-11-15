@@ -4,10 +4,17 @@ import iconFB from "../assets/icon-facebook.svg";
 import iconTW from "../assets/icon-twitter.svg";
 import iconIG from "../assets/icon-instagram.svg";
 import { Link } from "react-router-dom";
+import objects from "../assets/objects.svg";
 
 const Footer = () => {
   return (
-    <footer className="container mx-auto">
+    <footer className="container mx-auto relative">
+      <img
+        src={objects}
+        alt=""
+        draggable={false}
+        className="absolute top-0 -right-8 -mt-52 hidden md:block"
+      />
       <div className="px-4 xl:px-20 py-8 md:py-16">
         <div className="flex gap-16 items-start flex-col lg:flex-row">
           <div className="lg:w-1/2">
