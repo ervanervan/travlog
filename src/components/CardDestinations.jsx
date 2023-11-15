@@ -9,7 +9,7 @@ export default function CardDestinations({
   rating,
 }) {
   return (
-    <div id="destination" className="py-16">
+    <div id="destination" className="pb-16 pt-28">
       <div className="w-80 bg-bgWhite rounded-3xl shadow-lg">
         <div className="h-64 w-full rounded-t-3xl">
           <img
@@ -17,6 +17,7 @@ export default function CardDestinations({
             alt="destination"
             width={320}
             height={252}
+            draggable={false}
             className="object-cover h-full w-full rounded-t-3xl"
           />
         </div>
@@ -33,7 +34,8 @@ export default function CardDestinations({
               alt=""
               width={24}
               height={24}
-              className="w-6 h-6 pr-48"
+              draggable={false}
+              className="w-6 h-6"
             />
           </p>
         </div>

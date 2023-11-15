@@ -1,44 +1,24 @@
-import React, { useState } from "react";
-import {
-  ArrowLongLeftIcon,
-  ArrowLongRightIcon,
-} from "@heroicons/react/24/solid";
+import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { DATA_DESTINATIONS } from "../Data";
 import CardDestinations from "./CardDestinations";
+import CustomDot from "./CustomDot";
+import CustomLeftArrow from "./CustomLeftArrow";
+import CustomRightArrow from "./CustomRightArrow";
 
 export default function Destination() {
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  const handlePrev = () => {
-    setActiveIndex((prevIndex) =>
-      prevIndex === 0 ? DATA_DESTINATIONS.length - 1 : prevIndex - 1
-    );
-  };
-
-  const handleNext = () => {
-    setActiveIndex((prevIndex) =>
-      prevIndex === DATA_DESTINATIONS.length - 1 ? 0 : prevIndex + 1
-    );
-  };
-
   const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5,
-    },
     desktop: {
-      breakpoint: { max: 3000, min: 1024 },
+      breakpoint: { max: 3000, min: 1280 },
       items: 3,
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
+      breakpoint: { max: 1279, min: 768 },
       items: 2,
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 767, min: 0 },
       items: 1,
     },
   };
@@ -56,23 +36,20 @@ export default function Destination() {
                 Explore top destinations
               </h2>
             </div>
-            <div className="flex justify-between md:justify-center md:gap-8 items-center">
-              <button
-                onClick={handlePrev}
-                className="p-6 rounded-full bg-bgWhite border border-bgGray"
-              >
-                <ArrowLongLeftIcon className="h-6 w-6 text-slate-900" />
-              </button>
-              <button
-                onClick={handleNext}
-                className="p-6 rounded-full bg-bgPrimary"
-              >
-                <ArrowLongRightIcon className="h-6 w-6 text-textWhite" />
-              </button>
-            </div>
           </div>
           <div>
-            <Carousel responsive={responsive}>
+            <Carousel
+              responsive={responsive}
+              swipeable={false}
+              draggable={false}
+              infinite={true}
+              autoPlay={true}
+              autoPlaySpeed={1500}
+              showDots={true}
+              customDot={<CustomDot />}
+              customLeftArrow={<CustomLeftArrow />}
+              customRightArrow={<CustomRightArrow />}
+            >
               {DATA_DESTINATIONS.map((destination) => (
                 <CardDestinations key={destination.id} {...destination} />
               ))}
