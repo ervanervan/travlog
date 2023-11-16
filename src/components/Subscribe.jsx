@@ -3,7 +3,7 @@ import graphicElement from "../assets/graphic-element.svg";
 
 const Subscribe = () => {
   return (
-    <section className="container mx-auto">
+    <section id="contactus" className="container mx-auto">
       <div className="relative px-4 xl:px-20 md:py-16">
         <img
           src={graphicElement}
