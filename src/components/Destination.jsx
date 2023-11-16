@@ -44,7 +44,7 @@ export default function Destination() {
               draggable={false}
               infinite={true}
               autoPlay={true}
-              autoPlaySpeed={1500}
+              autoPlaySpeed={2000}
               showDots={true}
               customDot={<CustomDot />}
               customLeftArrow={<CustomLeftArrow />}
