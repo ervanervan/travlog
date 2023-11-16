@@ -9,7 +9,12 @@ export default function TravelPoint() {
       <div className="px-4 xl:px-20 py-8 md:py-16">
         <div className="flex flex-col lg:flex-row gap-16 lg:gap-0 items-center justify-center">
           <div className="lg:-ml-10 xl:-ml-[7.25rem] lg:flex-1">
-            <img src={imgTravelPoint} alt="" className="w-full" />
+            <img
+              src={imgTravelPoint}
+              alt=""
+              draggable={false}
+              className="w-full"
+            />
           </div>
           <div className="lg:w-[46%] xl:w-[40%]">
             <div className="text-center lg:text-start">
