@@ -10,7 +10,7 @@ export default function Features() {
         <div className="px-8 lg:px-0">
           <div className="flex flex-col lg:flex-row items-start gap-16 lg:gap-6 xl:gap-14 items center">
             <div className="lg:order-2 lg:-mr-32">
-              <img src={imgFeatures} alt="" />
+              <img src={imgFeatures} alt="" draggable={false} />
             </div>
             <div className="flex flex-col gap-8 md:gap-16 items-center lg:order-1">
               <div className="text-center lg:text-start">
