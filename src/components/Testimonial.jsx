@@ -34,7 +34,7 @@ export default function Testimonial() {
         src={bgLayer}
         alt=""
         draggable={false}
-        className="absolute w-full left-0 lg:-top-28 xl:-top-64 2xl:-top-[30rem] object-fill hidden md:block"
+        className="absolute w-full left-0 lg:-top-28 xl:-top-64 2xl:-top-[30rem] -z-10 object-fill hidden md:block"
       />
       <div className="container mx-auto px-4 lg:px-20 py-8">
         <div className="text-center">
